@@ -12,17 +12,17 @@ public class Exercicio03 {
 			a[i] = sc.nextInt();
 		}
 		int count = 0, x=0;
-		int naoAchou = 1;
+		boolean naoAchou = true;
 		for (i = 0; i < 5; i++) {
-			naoAchou = 1;
+			naoAchou = true;
 			x = 0;
-			while(x<5 && naoAchou == 1){
+			while(x<5 && naoAchou){
 				if (i != x && a[i] == a[x]) {
-					naoAchou = 0;
+					naoAchou = false;
 				}
 				x++;
 			}
-			if (naoAchou == 1) {
+			if (naoAchou) {
 				count++;
 			}
 		}
