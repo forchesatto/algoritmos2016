@@ -21,6 +21,24 @@ public class ExemploLeituraEscrita {
 						,i,j,a[i][j]);
 			}
 		}
+		int lMaior =0, cMaior=0;
+		int maior = a[0][0];
+		for(i=0;i<3;i++){
+			for(j=0;j<3;j++){
+				if(a[i][j] > maior){
+					maior = a[i][j];
+					lMaior = i;
+					cMaior = j;
+				}
+			}
+		}
+		
+		System.out.println("O maior valor = "+maior);
+		System.out.println("A linha maior valor = "+lMaior);
+		System.out.println("A coluna maior valor = "+cMaior);
+		
+		
+		
 		sc.close();
 	}
 }
