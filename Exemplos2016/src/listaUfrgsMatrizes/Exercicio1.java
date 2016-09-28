@@ -60,6 +60,24 @@ public class Exercicio1 {
 			}
 		}
 		System.out.println("Negativos ="+countNegativos);
+		//e
+		System.out.println("Digite um número a ser encontrado:");
+		int numero = sc.nextInt();
+		int posL = -1;
+		int posC = -1;
+		for(i=0;i<6;i++){
+			for(j=0;j<3;j++){
+				if(a[i][j] == numero){
+					posL = i;
+					posC = j;
+				}
+			}
+		}
+		if(posL >= 0 && posC >= 0){
+			System.out.printf("Linha: %d Coluna: %d",posL,posC);
+		} else {
+			System.out.println("Não achou");
+		}
 		sc.close();
 	}
 }
