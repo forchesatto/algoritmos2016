@@ -40,6 +40,26 @@ public class Exercicio1 {
 			System.out.printf("Media da coluna [%d] = %f \n"
 					,i,mediaColuna[i]);
 		}
+		//c
+		int produto = 1;
+		for(i=0;i<6;i++){
+			for(j=0;j<3;j++){
+				if(a[i][j] != 0){
+					produto *= a[i][j];
+				}
+			}
+		}
+		System.out.println("Produto ="+produto);
+		//d
+		int countNegativos = 0;
+		for(i=0;i<6;i++){
+			for(j=0;j<3;j++){
+				if(a[i][j] < 0){
+					countNegativos++;
+				}
+			}
+		}
+		System.out.println("Negativos ="+countNegativos);
 		sc.close();
 	}
 }
