@@ -7,6 +7,7 @@ public class Exercicio1 {
 	public static void main(String[] args) {
 		int a[][] = new int[6][3];
 		int maiorLinha[] = new int[6];
+		float mediaColuna[] = new float[3];
 		int i, j;
 		Scanner sc = new Scanner(System.in);
 		for(i=0;i<6;i++){
@@ -27,7 +28,18 @@ public class Exercicio1 {
 			System.out.printf("Maior da linha [%d] = %d \n"
 					,i,maiorLinha[i]);
 		}
+		
 		//b
+		for(i=0;i<3;i++){
+			for(j=0;j<6;j++){
+				mediaColuna[i] += a[j][i];
+			}
+			mediaColuna[i] = mediaColuna[i] / 6;
+		}
+		for(i=0;i<3;i++){
+			System.out.printf("Media da coluna [%d] = %f \n"
+					,i,mediaColuna[i]);
+		}
 		sc.close();
 	}
 }
