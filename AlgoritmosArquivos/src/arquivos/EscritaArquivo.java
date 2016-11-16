@@ -38,6 +38,8 @@ public class EscritaArquivo {
 					StandardOpenOption.CREATE_NEW);
 		}
 		sc.close();
+		
+		Files.lines(caminhoNovo).forEach(linha->{System.out.println(linha);});
 	}
 	
 }
